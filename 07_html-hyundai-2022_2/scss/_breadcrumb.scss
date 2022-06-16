@@ -1,0 +1,54 @@
+/* ===== Bread Crumbs ===== */
+#breadcrumbs {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  background-color: var(--color-primary);
+  line-height: 20px;
+  position: relative;
+}
+
+.breadcrumb {
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  overflow-x: auto;
+  padding: 20px 0;
+  margin-bottom: 0;
+}
+
+.breadcrumb>.breadcrumb-item {
+  float: none;
+  display: inline-block;
+}
+
+.breadcrumb a {
+  color: var(--color-white);
+}
+
+.breadcrumb>.active,
+.breadcrumb>.active a {
+  color: var(--color-white);
+  font-weight: 700;
+}
+
+.breadcrumb a:focus,
+.breadcrumb a:hover,
+.breadcrumb a:active {
+  color: var(--color-white);
+  font-weight: 700;
+}
+
+.breadcrumb>.breadcrumb-item+.breadcrumb-item:before { 
+  color: var(--color-white);
+}
+
+@media (min-width: 992px) {}
+
+@media (max-width: 991px) {
+   
+}

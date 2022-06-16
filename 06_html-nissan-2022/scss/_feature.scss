@@ -1,0 +1,36 @@
+.section-feature {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+
+  .feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 5px solid transparent;
+    padding: 20px 0px;
+    text-transform: uppercase;
+    .fa {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 10px;
+      filter: var(--filter-color-primary);
+    }
+
+    &:after {
+      position: absolute;
+      display: block;
+      content: "";
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0px;
+      height: 4px;
+      width: 0px;
+      background-color: var(--color-primary);
+      transition: width 0.25s;
+    }
+
+    &:hover:after {
+      width: 100%;
+    }
+  }
+}

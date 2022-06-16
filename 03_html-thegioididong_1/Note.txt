@@ -1,0 +1,7 @@
+color: #fed100;
+hover: #ffdd48
+border: #eee
+
+
+    -webkit-border-radius: 4px;
+            border-radius: 4px;

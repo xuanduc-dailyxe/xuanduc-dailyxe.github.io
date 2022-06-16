@@ -1,0 +1,99 @@
+/* ===== RATING STAR ===== */
+.rating {
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
+  margin-bottom: 0;
+}
+.rating .rating-box {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+  line-height: 1;
+}
+.rating .rating-box i {
+  color: #bdbdbd;
+  width: 14px;
+  height: 14px;
+  margin: 0 1px;
+  font-size: 12px;
+}
+.rating .rating-box span {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  line-height: 1;
+  background-color: #fff;
+}
+.rating .rating-box span i {
+  color: #fb6e2e;
+}
+.rating .rating-value {
+  font-size: 12px;
+  display: inline-block;
+  color: #333;
+  white-space: nowrap;
+  line-height: 1;
+  margin-left: 6px;
+}
+
+.rating-average{
+  margin-right: 10px;
+}
+.starrr {
+  display: inline-block;
+}
+
+.rating-list {
+  padding: 0px;
+  margin: 0px;
+  li {
+    align-items: center;
+    display: flex;
+    margin-bottom: 7px;
+    .number-star {
+      font-size: 12px;
+      line-height: 14px;
+      text-align: left;
+      width: 25px;
+    }
+
+     .timeline-star {
+        background-color: #eee;
+        height: 4px;
+        position: relative;
+        width: calc(100% - 60px);
+    }
+    
+    .timing {
+        background-color: #fe8c23;
+        left: 0;
+        height: 4px;
+        position: absolute;
+        top: 0;
+    }
+
+    .number-percent {
+        color: #2f80ed;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 15px;
+        padding-left: 10px;
+        text-align: left;
+        width: 35px;
+        cursor: pointer;
+        margin-bottom: 0px;
+    }
+
+     i {
+        margin-left: 3px;
+        font-size: 10px;
+    }
+  }
+}

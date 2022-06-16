@@ -1,0 +1,257 @@
+/*===== MODAL =====*/
+
+.modal {
+  .close {
+    position: absolute;
+    right: 0;
+    top: 22px;
+    width: 44px;
+    height: 44px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: 100;
+    -webkit-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s;
+    margin: -22px 0 0 0;
+    padding: 0;
+    opacity: 1;
+    z-index: 100;
+
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+      cursor: pointer;
+      transform: rotate(90deg);
+    }
+
+    &:after,
+    &:before {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: 10px;
+      height: 2px;
+      width: 24px;
+      background: var(--color-primary);
+      transition: all 0.5s;
+    }
+
+    &:before {
+      transform: rotate(-45deg);
+    }
+
+    &:after {
+      transform: rotate(45deg);
+    }
+  }
+
+  .modal-title {
+    position: relative;
+    color: var(--color-white);
+    font-size: 24px;
+    font-weight: 600; 
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+
+  .modal-body {
+    padding: 0;
+  }
+
+  .modal-content {
+    border: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+  }
+}
+
+/*  === MODAL CUSTOM === */
+.modal-custom {
+  z-index: 3001;
+  padding: 0px;
+
+  .close {
+    position: absolute;
+    right: 0;
+    top: 22px;
+    width: 44px;
+    height: 44px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: 100;
+    -webkit-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s;
+    margin: -22px 0 0 0;
+    padding: 0;
+    opacity: 1;
+
+    &:after,
+    &:before {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: 10px;
+      height: 2px;
+      width: 24px;
+      background: #c8102e;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+
+    &:hover {
+      transform: rotate(90deg);
+    }
+
+    &:before {
+      transform: rotate(-45deg);
+    }
+
+    &:after {
+      transform: rotate(45deg);
+    }
+  }
+
+  .modal-header {
+    position: relative;
+    color: #fff;
+    background-color: #fff;
+    border-radius: 0;
+    border: none;
+  }
+
+  .modal-dialog {
+    max-width: 800px;
+    
+  }
+
+  .modal-title {
+    width: 100%;
+    font-size: 36px;
+    padding: 0px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-weight: bold; 
+    color: #2b1907;
+
+    span {
+      margin-right: 10px;
+    }
+  }
+
+  .modal-content {
+    background: #fff;
+    padding: 0px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: none;
+  }
+
+  .modal-desc {
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  .modal-body {
+    padding: 2rem 1rem;
+    padding-top: 0px;
+  }
+
+  .modal-footer {
+    background-color: #222;
+    border-radius: 0;
+    border: none;
+    padding: 1.5rem 0.5rem;
+
+    .btn {
+      min-width: 240px;
+      font-size: 110%;
+      font-weight: bold;
+      background-color: #eaa53e !important;
+      border: none;
+      padding: 0.5rem 0.75rem;
+    }
+  }
+
+  .hotline-desc {
+    color: var(--color-text);
+  }
+
+  .btn-price-document {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+    .fa {
+      filter: var(--filter-color-white);
+    }
+  }
+}
+
+.modal-dutoan{
+  .modal-dialog {
+    max-width: 1000px; 
+  }
+
+}
+.modal-backdrop {
+  z-index: 3000;
+}
+
+@media (max-width: 1366px) {}
+
+@media (max-width: 991px) {
+  .modal-custom {
+    .modal-header-title {
+      padding-top: 50px;
+    }
+
+    .modal-dialog {
+      max-width: 100%;
+    }
+
+    .box-price-document-title {
+      font-size: 200%;
+    }
+    .modal-header{
+      padding: 40px 20px 0px 20px;
+    }
+    .modal-title {
+      width: 100%;
+      font-size: 150%;
+      padding: 0px;
+      text-align: center;
+      font-weight: bold; 
+
+      &::before {
+        height: 4px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 575px) {}
+
+@media (max-width: 375px) {}
+
+@keyframes shine-header {
+  0% {
+    left: -20%;
+  }
+
+  100% {
+    left: 120%;
+  }
+}

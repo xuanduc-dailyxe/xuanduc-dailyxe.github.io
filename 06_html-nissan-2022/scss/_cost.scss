@@ -1,0 +1,77 @@
+.section-cost {
+  background: url(../images/bg-cost.jpg) no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 60px 0px;
+  &::after {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent);
+    z-index: 0;
+  }
+}
+
+.box-cost {
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 10px 20px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 0px;
+
+  
+  .box-body {
+    padding: 0px;
+  }
+  .cost-info-title {
+    text-transform: uppercase;
+    font-size: 120%;
+    margin-bottom: 20px;
+  }
+  .result { 
+    .total,
+    .fee {
+      padding: 0px;
+      list-style: none;
+
+      li {
+        display: flex;
+        justify-content: space-between;
+        padding: 7px 0px;
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+    .fee {
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+    .total {
+      .label {
+        text-transform: uppercase;
+      }
+      .total {
+        font-size: 150%;
+        span:not(.label) {
+          color: var(--color-primary);
+        }
+      }
+    }
+  }
+
+  label {
+    font-weight: bold;
+    font-size: 110%;
+    span {
+      color: var(--color-primary);
+    }
+  }
+}

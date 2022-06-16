@@ -1,0 +1,27 @@
+{
+    "git.ignoreLimitWarning": true,
+    "liveSassCompile.settings.formats": [
+ 
+        {
+            "extensionName": ".min.css",
+            "format": "compressed",
+            "savePath": "/css"
+        }
+    ],
+    "liveSassCompile.settings.excludeList": [
+        "**/node_modules/**",
+        ".vscode/**"
+    ],
+    "liveSassCompile.settings.includeItems": [ 
+         "scss/style.scss",
+    ],
+    "liveSassCompile.settings.generateMap": false, // true, false dùng để build file map
+    "liveSassCompile.settings.autoprefix": [
+        "> 1%",
+        "last 5 versions"
+    ],
+    "html.format.wrapAttributes": "preserve-aligned",
+    "html.format.wrapLineLength": 0,
+    "minify.minifyExistingOnSave": true,
+    "liveServer.settings.port": 5503,
+}
