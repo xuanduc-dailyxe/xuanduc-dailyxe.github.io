@@ -1,0 +1,44 @@
+.box-contact {
+  .box-body {
+    padding: 40px 20px;
+  }
+  .contact-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0px;
+    .contact-item {
+      width: 50%;
+      margin-bottom: 20px;
+
+      .contact-link {
+        display: flex;
+        align-items: center;
+        .fa {
+          margin-right: 10px;
+        }
+      }
+      .title {
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .box-contact {
+    .box-body {
+      padding: 40px 0px;
+    }
+    .contact-list {
+      .contact-item {
+        width: 100%;
+      }
+    }
+  }
+  .section-contact {
+    iframe {
+      height: 50vh;
+    }
+  }
+}

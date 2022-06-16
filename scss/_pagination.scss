@@ -1,0 +1,68 @@
+/* ===== PAGINATION ===== */
+.pagination-list {
+  padding-top: 16px;
+  margin-bottom: var(--margin-bottom);
+  border-top: 1px solid var(--color-border);
+}
+
+.pagination {
+  margin: 0;
+}
+
+.pagination > .page-item {
+  margin: 0 5px;
+}
+
+.pagination > .page-item > .page-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text);
+  line-height: unset;
+  min-width: 45px;
+  height: 43px;
+  border: 0px;
+  text-align: center;
+  border-radius: 3px;
+  outline: none !important;
+  box-shadow: none !important;
+  padding: 0;
+  font-weight: 700;
+}
+
+.pagination > .page-item.previous > .page-link,
+.pagination > .page-item.next > .page-link {
+  position: relative;
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding: 10px 20px !important;
+}
+
+.pagination > .page-item.active > .page-link,
+.pagination > .page-item.active > .page-link:focus,
+.pagination > .page-item.active > .page-link:hover,
+.pagination > .page-item > .page-link:hover,
+.pagination > .page-item > .page-link:focus {
+  background-color: transparent;
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+@media (max-width: 991px) {
+  .pagination {
+    flex-wrap: wrap;
+  }
+
+  .pagination > .page-item > .page-link {
+    font-size: 80%;
+    min-width: unset;
+    padding: 0px 10px;
+  }
+  .pagination > .page-item.previous > .page-link,
+  .pagination > .page-item.next > .page-link {
+    position: relative;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 0px !important;
+  }
+}
