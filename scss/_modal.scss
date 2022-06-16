@@ -152,10 +152,10 @@
     padding: 0px;
     border-radius: 10px;
     overflow: hidden;
-    border: none; 
+    border: none;
   }
-  &.modal-bg{
-    .modal-content { 
+  &.modal-bg {
+    .modal-content {
       padding-left: 50%;
       position: relative;
       &::after {
@@ -174,7 +174,6 @@
       }
     }
   }
-  
 
   .modal-desc {
     width: 100%;
@@ -212,7 +211,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-width: 200px; 
+    min-width: 200px;
   }
 }
 
@@ -255,10 +254,12 @@
         height: 4px;
       }
     }
-    .modal-content {
-      padding: 0px;
-      &::after {
-        display: none;
+    &.modal-bg {
+      .modal-content {
+        padding: 0px;
+        &::after {
+          display: none;
+        }
       }
     }
   }

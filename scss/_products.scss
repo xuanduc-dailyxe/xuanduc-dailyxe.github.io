@@ -613,6 +613,17 @@
         }
       }
     }
+
+    .owl-model{
+      &.product-list { 
+        .product-item {
+          width: 100%; 
+          .product-item-title {
+            font-size: 200%;
+          }
+        }
+      }
+    }
   }
 
   .box-product.highlight .box-body {
